@@ -81,6 +81,12 @@ a {
     justify-content: space-between;
 }
 
+.fixed {
+    position: sticky;
+    top: 28px;
+    z-index: 1;
+}
+
 .logo {
     display: inline-flex;
     font-size: 1rem;
@@ -316,4 +322,65 @@ a {
     font-weight: 300;
     line-height: 1.75; /* 175% */
     margin-top: 8px;
+}
+
+.work .section-desc,
+.work .section-heading {
+    text-align: left;
+    margin: 18px 0 0 0;
+}
+
+/* =========== Work ================= */
+.work {
+    background: #f6fbff;
+    padding: 100px 0;
+}
+
+.work__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.work-item {
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    padding: 43px 42px;
+}
+
+.work-item:hover {
+    position: relative;
+    bottom: 16px;
+    border-color: #2e80ce;
+    transition: all 0.2s linear;
+}
+
+.work-item:hover .work-item__more {
+    color: #2e80ce;
+}
+
+.work-item__heading {
+    color: #10375c;
+    font-size: 2.6rem;
+    margin-top: 18px;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.work-item__desc {
+    color: #575f66;
+    font-size: 1.6rem;
+    margin-top: 28px;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.work-item__more {
+    display: inline-block;
+    color: #575f66;
+    margin-top: 18px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
 }
