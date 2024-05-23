@@ -69,7 +69,8 @@ a {
 
 /* Header */
 .header {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 110px;
     background: var(--header-bg);
     padding-top: 30px;
 }
